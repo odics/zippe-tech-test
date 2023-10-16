@@ -38,8 +38,8 @@ class LowEnergyMode:
     def disable(self):
         # If low energy mode is disabled, reset values accordingly
         logging.info(f"{datetime.datetime.now()} Device exited low energy mode")
-        self.screen_brightness = 100
-        self.gps_polling_rate = 60
+        self.set_screen_brightness(100)
+        self.set_gps_polling_rate(60)
 
     def monitor_battery(self):
         # This loop runs in a separate thread and does not block execution of the remaining code
