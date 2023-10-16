@@ -14,7 +14,7 @@ class LowEnergyMode:
     def __init__(self):
         # Add variable to set frequency at which battery should be checked (in seconds)
         self.battery_polling_rate = 5
-        # Add bool to toggle whether battery should be checked, in the event that low energy mode needs to be disabled
+        # Add bool to toggle whether battery should be checked, in the event that battery polling needs to be disabled
         self.poll_battery = True
         # Set thresholds for battery levels if different action is needed based on different battery levels. Currently,
         # only the high threshold is being checked
